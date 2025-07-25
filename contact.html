@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Electronics Assembly Unit - Contact</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Contact Us</h1>
+        <nav align="center">
+            <a href="index.html">Home</a> |
+            <a href="components.html">Components</a> |
+            <a href="assembly.html">Assembly</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2 align="center">Get in Touch</h2>
+            
+            <div align="center">
+                <h3>Our Location</h3>
+                <p>123 Assembly Street<br>
+                Electronics District<br>
+                Tech City, TC 12345</p>
+                
+                <iframe src="https://www.google.com/maps/embed?pb=..." 
+                        width="400" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                </iframe>
+            </div>
+            
+            <form action="/submit" method="post" align="center">
+                <fieldset>
+                    <legend><b>Contact Form</b></legend>
+                    
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" id="phone" name="phone"><br>
+                    
+                    <label for="service">Service Required:</label><br>
+                    <select id="service" name="service">
+                        <option value="pcb">PCB Assembly</option>
+                        <option value="smt">SMT Assembly</option>
+                        <option value="testing">Testing Services</option>
+                    </select><br>
+                    
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                    
+                    <label for="urgency">Urgency Level:</label><br>
+                    <input type="radio" id="low" name="urgency" value="low">
+                    <label for="low">Low</label>
+                    <input type="radio" id="medium" name="urgency" value="medium">
+                    <label for="medium">Medium</label>
+                    <input type="radio" id="high" name="urgency" value="high">
+                    <label for="high">High</label><br>
+                    
+                    <label for="newsletter">Subscribe to Newsletter:</label>
+                    <input type="checkbox" id="newsletter" name="newsletter"><br>
+                    
+                    <input type="submit" value="Send Message">
+                    <input type="reset" value="Clear Form">
+                </fieldset>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2023 Electronics Assembly Unit | Tel: <a href="tel:+1234567890">123-456-7890</a></p>
+    </footer>
+</body>
+</html>
